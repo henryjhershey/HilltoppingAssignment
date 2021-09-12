@@ -26,7 +26,8 @@ The output takes the form of a list with three components
 3. the randomly generated landscape for that set of iterations (a new landscape is generated each time the function is executed)
 
 the user may execute the run_model() function, and then plot the output to visualize corridors on the landscape
-I suggest using the script titled "output_vis.R" to test the functions and visualize the output
+I suggest using the script titled "RunModel.R" to test the functions and visualize the output.
+Tweak the starting parameters, and the functions that generate the population and landscape will run in the background according to those settings.
 
 Based on experiments with 5 populations, and numerous random landscapes, the butterflies do use corridors. Given that the landscape has one hilltop, and four "ridges" extending in the cardinal directions away from the hilltop, butterflies travel to the nearest ridge, depending on their quadrant of origin, and then travel along the ridge towards the hilltop linearly.
 
