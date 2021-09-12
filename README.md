@@ -11,14 +11,14 @@ output is generated with the run_model() function.
 
 the required inputs for the run_model() function are a list of parameters called "starts", and a number of populations to simulate called "iter".
 "starts" is a named list with the following components, and example values:
-elevation   #peak elevation min and max
-landscape   #number of patches on each side, total patch number = landscape*landscape
-nindvs      #number of individuals to simulate in a population
-nsteps      #number of steps an individual can take
-move        #decimal probability of moving to highest neighbor patch (NOT to a random neighbor patch)
-originwidth #width of the square patch on which to originate the population
+1. elevation   #peak elevation min and max
+2. landscape   #number of patches on each side, total patch number = landscape*landscape
+3. nindvs      #number of individuals to simulate in a population
+4. nsteps      #number of steps an individual can take
+5. move        #decimal probability of moving to highest neighbor patch (NOT to a random neighbor patch)
+6. originwidth #width of the square patch on which to originate the population
 
-starts=list(elevation=c(0, 400), landscape =150, nindvs=50, nsteps=500, move=0.8)
+starts=list(elevation=c(0, 400), landscape =150, nindvs=50, nsteps=500, move=0.8, originwidth=15)
 
 The output takes the form of a list with three components
 1. a matrix of all butterfly locations during the simulation (aggregated across individuals: dimensions= 2 columns, and nindvs*nsteps*iter rows)
